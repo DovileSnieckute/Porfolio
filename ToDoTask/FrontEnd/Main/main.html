@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="/Assignment/Main/main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Main page</title>
+</head>
+
+<body>
+
+    <h1>TO DO APP</h1>
+
+    <!-- Button to open the login and sign up form -->
+    <div>
+        <button id="login" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+        <button id="signup" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
+    </div>
+
+
+    <!-- for login -->
+    <div id="id01" class="modal1">
+        <span
+            onclick="document.getElementById('loginEmail').value = ' ', document.getElementById('loginPassword').value = ' ', document.getElementById('loginName').value = ' ', document.getElementById('errorLogin').style.visibility = 'hidden', document.getElementById('id01').style.display='none'"
+            class="close" title="Close Login">&times;</span>
+
+
+        <form class="myForm1" action="">
+
+            <div class="container">
+                <!-- <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+                <label for="surname"><b>Surname</b></label>
+                <input type="surname" placeholder="Enter Surname" name="surname" id="surname" required> -->
+
+                <label for="loginName"><b>Name</b></label>
+                <input type="loginName" placeholder="Enter Name" name="loginName" id="loginName" required>
+
+                <label for="loginEmail"><b>E-mail</b></label>
+                <input type="loginEmail" placeholder="Enter E-mail" name="loginEmail" id="loginEmail" required>
+                <small id="error">error</small>
+
+                <label for="loginPassword"><b>Password</b></label>
+                <input type="loginPassword" placeholder="Enter Password" name="loginPassword" id="loginPassword" required>
+
+                <small id="errorLogin">error</small>
+
+                <button type="submit" id="loginBtn">Login</button>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button"
+                    onclick="document.getElementById('loginEmail').value = ' ', document.getElementById('loginPassword').value = ' ', document.getElementById('loginName').value = ' ', document.getElementById('errorLogin').style.visibility = 'hidden', document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- for signup -->
+    <div id="id02" class="modal2">
+        <span
+            onclick="document.getElementById('name2').value = ' ', document.getElementById('surname2').value = ' ', document.getElementById('email').value = ' ', document.getElementById('password').value = ' ', document.getElementById('repeatPassword').value = ' ', document.getElementById('id02').style.display='none', document.getElementById('error').style.visibility = 'hidden'"
+            class="close2" title="Close Sign Up">&times;</span>
+
+        <form class="myForm2" action="">
+
+            <div class="container2">
+                <label for="name2"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name2" id="name2" required>
+
+                <label for="surname2"><b>Surname</b></label>
+                <input type="surname" placeholder="Enter Surname" name="surname2" id="surname2" required>
+
+                <label for="email"><b>E-mail</b></label>
+                <input type="email" placeholder="Enter E-mail" name="email" id="email" required>
+                <small id="error">error</small>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+                <label for="repeatPassword"><b>Repeat Password</b></label>
+                <input type="repeatPassword" placeholder="Repeat Password" name="repeatPassword" id="repeatPassword" required>
+
+
+                <button type="submit" id="signupBtn">Sign up</button>
+
+            </div>
+
+            <div class="container2" style="background-color:#f1f1f1">
+                <button type="button"
+                    onclick="document.getElementById('name2').value = ' ', document.getElementById('surname2').value = ' ', document.getElementById('email').value = ' ', document.getElementById('password').value = ' ', document.getElementById('repeatPassword').value = ' ', document.getElementById('id02').style.display='none', document.getElementById('error').style.visibility = 'hidden'"
+                    class="cancelbtn2">Cancel</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

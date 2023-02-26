@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+    <div class="icon">
+        <input type="submit" class="logo" id="logo" value="Your"></input>
+        <input type="submit" class="logo2" id="logo2" value="Energy"></input>
+    </div>
+
+    <nav>
+        <ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </ul>
+    </nav>
+
+
+    <!-- lamp -->
+    <div class="lamp-container">
+        <img src="lamp.png" class="lamp">
+        <div class="content">
+            <h1 id="words">IT IS YOUR CHOICE</h1>
+            <p class="par" id="words2"> where to buy energy for your home</p>
+        </div>
+        <img src="light.png" class="light" id="light">
+    </div>
+
+
+    <!-- login form -->
+    <div class="form">
+        <h2>Login Here</h2>
+        <input type="email" name="email" id="email" placeholder="Enter Email Here">
+        <input type="password" name="password" id="password" placeholder="Enter Password Here">
+        <small id="errorLogin">error</small>
+        <button class="loginBtn" id="loginBtn">Login</a></button>
+
+        <div>
+            <p class="link">Don't have an account?<br>
+                <button id="signup" onclick="document.getElementById('id02').style.display='block'">Sign up</button>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- signup form-->
+    <div id="id02" class="modal2">
+
+        <form class="myForm2" action="">
+
+            <div class="container2">
+
+                <h2>Sign up Here</h2>
+
+                <input type="text" placeholder="Enter Name" name="name2" id="name2" required>
+
+                <input type="surname" placeholder="Enter Surname" name="surname2" id="surname2" required>
+
+                <input type="email" placeholder="Enter E-mail" name="email2" id="email2" required>
+                <small id="error">error</small>
+
+                <input type="password" placeholder="Enter Password" name="password2" id="password2" required>
+
+                <input type="password" placeholder="Repeat Password" name="repeatPassword" id="repeatPassword" required>
+                <small id="passwordError">error</small>
+
+                <button type="submit" id="signupBtn">Sign up</button>
+
+                <button type="button"
+                    onclick="document.getElementById('name2').placeholder = 'Enter Name', 
+                    document.getElementById('surname2').placeholder = 'Enter Surname', 
+                    document.getElementById('email2').placeholder = 'Enter E-mail', 
+                    document.getElementById('password2').placeholder = 'Enter Password', 
+                    document.getElementById('repeatPassword').placeholder = 'Repeat Password', 
+                    document.getElementById('id02').style.display='none', 
+                    document.getElementById('error').style.visibility = 'hidden'"
+                    class="cancelbtn2">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Your<span>Energy</span></h3>
+
+            <p class="footer-company-name">© 2023 YourEnergy Ltd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Vilniaus g. 24, LT-46416</span>
+                    Lithuania, Kaunas</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+370 664 37948</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:d.snieckute@gmail.com">support@yourenergy.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>More information</span>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

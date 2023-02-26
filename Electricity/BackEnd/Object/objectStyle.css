@@ -1,0 +1,516 @@
+#addBtn {
+	margin-top: 245px;
+
+}
+
+:root {
+	--primary: #ff7200;
+	--personal: var(--primary);
+	--grey: #888;
+	--dark: #1d2026;
+	--shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+input,
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: initial;
+}
+
+
+section {
+	margin-bottom: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+/* nav bar */
+nav {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+	margin-top: 10px;
+
+}
+
+nav ul {
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #1d2026;
+}
+
+ul li a:hover {
+	color: #ff7200;
+}
+
+/* logo */
+.logo {
+	color: #1d2026;
+	font-size: 50px;
+	padding-left: 20px;
+	float: left;
+	padding-top: 10px;
+	margin-top: 5px;
+	background: none;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.logo2 {
+	color: #ff7200;
+	font-size: 50px;
+	float: left;
+	padding-top: 10px;
+	margin-top: 5px;
+	background: none;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/* logout button */
+#logout {
+
+	background-color: #ff7200;
+	width: 100px;
+	height: 40px;
+	font-size: 15px;
+	padding: 0.5rem 1rem;
+	color: #FFF;
+	font-weight: 700;
+	background-color: var(--primary);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+	margin-top: 10px;
+	margin-left: 20px;
+
+}
+
+/* add new object header */
+#addNewObject,
+#myObjects {
+	color: var(--dark);
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	margin-top: 70px;
+}
+
+
+/* create new object */
+.create-object input[type="text"] {
+	display: block;
+	width: 100%;
+	font-size: 1.125rem;
+	padding: 1rem 1.5rem;
+	color: var(--dark);
+	background-color: #FFF;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1.5rem;
+}
+
+.create-object input[type="submit"] {
+	display: block;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 1rem 1.5rem;
+	color: #FFF;
+	font-weight: 700;
+	background-color: var(--primary);
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.2s ease-out;
+}
+
+.create-object input[type="submit"]:hover,
+#logout:hover {
+	background: #1d2026;
+}
+
+/* my objects */
+.object-list .list {
+	margin: 1rem 0;
+}
+
+.object-list .object-item {
+	display: flex;
+	align-items: center;
+	background-color: #FFF;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: var(--shadow);
+	margin-bottom: 1rem;
+}
+
+.object-item .object-content {
+	flex: 1 1 0%;
+}
+
+.object-item .object-content input,
+.object-item .object-content input div
+ {
+	color: var(--dark);
+	font-size: 1.125rem;
+
+
+}
+
+.object-item .actions {
+	display: flex;
+	align-items: center;
+}
+
+.object-item .actions button {
+	display: block;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	color: #FFF;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	width: 90px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.object-item .actions .delete:hover {
+	background-color: #1d2026;
+}
+
+.object-item .actions .edit:hover {
+	background-color: #ff7200;
+}
+
+.object-item .actions .edit {
+	margin-right: 0.5rem;
+	background-color: var(--dark);
+}
+
+.object-item .actions .delete {
+	background-color: var(--primary);
+}
+
+
+.header {
+	display: inline-flex;
+	margin-top: 1rem;
+	visibility: hidden;
+	font-size: 25px;
+
+}
+
+#headerObj {
+	margin-right: 7.7rem;
+	margin-left: 0.9rem;
+}
+
+#headerAddress {
+	margin-right: 11rem;
+}
+
+/* edit object */
+#objNumber,
+#objAddress,
+#objPlan {
+	width: 390px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid #ff7200;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: #1d2026;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+}
+
+.myForm2 input:focus {
+	outline: none;
+}
+
+.container2 h2 {
+	width: 370px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #fefeff;
+	font-size: 22px;
+	background-color: #1d2026;
+	border-radius: 10px;
+	padding: 8px;
+	margin-left: 10px;
+	margin-top: 5px;
+
+}
+
+label {
+	color: #ff7200;
+  }
+
+/* save edited object */
+#saveBtn {
+
+	width: 390px;
+	height: 40px;
+	background: #ff7200;
+	border: none;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.4s ease;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#saveBtn:hover {
+	background: #1d2026;
+}
+
+
+.container2 {
+	width: 450px;
+	height: 450px;
+	background: #ffffff;
+	position: absolute;
+	transform: translate(0%, -5%);
+	border-radius: 10px;
+	padding: 20px 30px;
+	margin: 5% 0;
+	margin-left: 30%;
+
+}
+
+.modal2 {
+	visibility: hidden;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 100px;
+	padding-left: 13%
+}
+
+/* footer */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px) {
+	footer {
+		position: static;
+	}
+}
+
+
+.footer-distributed {
+	background-color: #1d2026;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 10px 50px 10px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+	width: 35%;
+	padding-top: 40px;
+}
+
+.footer-distributed h3 {
+	color: #ffffff;
+	font-size: 50px;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+	width: 30%;
+}
+
+.footer-distributed h3 span {
+	color: #ff7200;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+	color: #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+	color: #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+	width: 40%;
+}
+
+
+.footer-distributed .footer-center i {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+	color: #ff7200;
+	text-decoration: none;
+	;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+	width: 10%;
+	padding-top: 40px;
+
+}
+
+.footer-distributed .footer-company-about {
+	line-height: 20px;
+	color: #1b5b92;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+	display: block;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: #ff7200;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 18px;
+	margin-bottom: 5px;
+}
+
+/* code for Responsive Footer */
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i {
+		margin-left: 0;
+	}
+
+}

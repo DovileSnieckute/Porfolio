@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>To Do App</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+	<script src="/Assignment/ToDoApp/myjs.js" defer></script>
+	
+
+
+</head>
+
+<body>
+
+	<main class="app">
+
+		<section class="greeting">
+			<h2 class="title">Hello,
+				<p id="appname">Name</p>
+
+			</h2>
+
+			<input type="submit" value="Log Out" id="logout">
+			
+			<section class="create-todo">
+				<h3>CREATE A TODO</h3>
+				<form id="todoForm">
+					<input type="text" placeholder="Type" name="type" id="type" />
+					<input type="text" placeholder="Content: e.g. Go to the gym" name="content" id="content" />
+					<input type="text" placeholder="End date: yyyy-mm-dd"
+                    onfocus="(this.type='date')" id="enddate">
+					<input type="submit" value="SUBMIT" id="submit" />
+				</form>
+			</section>
+
+
+
+			<section class="todo-list">
+				<h3>TODO LIST</h3>
+				<div class="header">
+					<p id="headerType">Type </p>
+					<p id="headerContent">Content </p>
+					<p id="headerEnddate">End Date </p>
+				</div>
+				<div class="list" id="todo-list"></div>
+			</section>
+	</main>
+
+
+</body>
+
+</html>

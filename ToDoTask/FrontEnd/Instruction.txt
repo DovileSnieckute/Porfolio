@@ -1,0 +1,18 @@
+TestAPI: 
+Users: https://testapi.io/api/dovsni/resource/Users
+todoapp: https://testapi.io/api/dovsni/resource/todoapp
+
+Login: 
+Name: test
+Surname: test
+
+"test" user input:
+Type: test
+Content: test
+Enddate: 2022-11-11
+
+Delete input:
+press delete button
+
+Edit input:
+edit input then press "Edit" button to confirm edited text
